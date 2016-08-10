@@ -3,9 +3,8 @@ package sortowanie;
 public class Sort {
 
 	public static void main(String[] args) {
-		System.out.println("Witamy b¹belki!!!");
-		System.out.println("Test 1");
-		System.out.println("Test 2");
+		System.out.println("Witamy");
+		int[] tablica = {2,3,1,5,4,6,7,8,9,10};
 	
 	}
 
