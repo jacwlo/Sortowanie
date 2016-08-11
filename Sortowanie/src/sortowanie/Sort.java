@@ -1,3 +1,7 @@
+/**Aplikacja przyjmuje na wejscie niekompletna tablice oraz
+ * wielkosc calej tablicy. Na wyjscie otrzymujemy brakujace 
+ * elementy tablicy**/
+
 package sortowanie;
 
 //import java.util.Scanner;
@@ -5,7 +9,7 @@ package sortowanie;
 public class Sort {
 
 	public static void main(String[] args) {
-		/**Wprowadzenie d³ugoœci tablicy**/
+		/**Wprowadzenie dlugosci tablicy z konsoli**/
 		//Scanner in = new Scanner(System.in);
 		/*
 		System.out.println("Witamy");
@@ -16,15 +20,19 @@ public class Sort {
 		*/
 		/*
 		for (int i=0; i<tab.length; i++){
-		System.out.format("\nPodaj %d element tablicy: ", i+1);
-		int b = in.nextInt();
-		tab[i]=b;
-		System.out.format("Wprowadzony %d element to: %d", i, tab[i]);
+			System.out.format("\nPodaj %d element tablicy: ", i+1);
+			int b = in.nextInt();
+			tab[i]=b;
+			System.out.format("Wprowadzony %d element to: %d", i, tab[i]);
 		};
 		*/
+		/**Zdefiniowana wielkosci tablicy  **/
 		int[] tab_in={2,3,7,4,9};
 		int[] tab_out= new int[10];
 		int out;
+		
+		/**Petla porownujaca tablice wejsciowa z tablica kompletna
+		 * i wstawiajaca flagi (0) tam gdzie wystepuja wspolne elementy**/
 		for (int i=0; i<tab_out.length; i++){
 			tab_out[i]=i+1;
 			out=tab_out[i];
